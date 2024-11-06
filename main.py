@@ -45,7 +45,6 @@ def read_root():
 
 @app.get("/reviews")
 async def read_item():
-    results = await conn.get_reviews()
     reviews = [
         {
             "photo_path": "img/mainphoto.png",
