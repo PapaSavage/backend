@@ -46,19 +46,23 @@ def read_root():
 @app.get("/reviews")
 async def read_item():
     results = await conn.get_reviews()
-    reviews = []
-
-    for review in results:
-        reviews.append(
-            review_item(
-                review_id=review[0],
-                author_name=review[1],
-                description=review[2],
-                photo_path=review[3],
-            )
-        )
-
-    # print(reviews)
+    reviews = [
+        {
+            "photo_path": "img/mainphoto.png",
+            "author_name": "Falaleev Danil",
+            "description": "Мы были впечатлены качеством и скоростью работы на...",
+        },
+        {
+            "photo_path": "img/mainphoto.png",
+            "author_name": "Falaleev Danil",
+            "description": "Мы были впечатлены качеством и скоростью работы на...",
+        },
+        {
+            "photo_path": "img/mainphoto.png",
+            "author_name": "Falaleev Danil",
+            "description": "Мы были впечатлены качеством и скоростью работы на...",
+        },
+    ]
 
     return {"results": reviews}
 
