@@ -20,6 +20,7 @@ origins = [
     "http://papasavage.xyz.testihc.ru",
     "http://papasavage.xyz.testihc.ru/",
     "https://papasavage.github.io/",
+    "https://papasavage.github.io",
 ]
 
 app.add_middleware(
