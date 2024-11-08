@@ -5,6 +5,7 @@ from pydantic import BaseModel
 from typing import Optional
 import asyncio
 
+
 # from database import *
 from database import *
 import uvicorn
@@ -22,7 +23,14 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[
+        "http://localhost",
+        "http://localhost:3000",
+        "http://localhost:8888",
+        "http://127.0.0.1:5500",
+        "http://papasavage.xyz.testihc.ru",
+        "https://backend-lil3.onrender.com",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
