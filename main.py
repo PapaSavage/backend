@@ -19,7 +19,8 @@ origins = [
     "http://127.0.0.1:5500",
     "http://127.0.0.1:3000",
     "http://papasavage.xyz.testihc.ru",
-    "http://77.222.63.129:3000",  # Added here
+    "http://77.222.63.129:3000",  # SPACEWEB
+    "http://45.153.189.82:3000",  # BEGET
     "https://backend-lil3.onrender.com",
 ]
 
