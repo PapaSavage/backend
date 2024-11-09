@@ -17,6 +17,7 @@ origins = [
     "http://localhost:3000",
     "http://localhost:8888",
     "http://127.0.0.1:5500",
+    "http://127.0.0.1:3000",
     "http://papasavage.xyz.testihc.ru/",
 ]
 
@@ -27,6 +28,8 @@ app.add_middleware(
         "http://localhost:3000",
         "http://localhost:8888",
         "http://127.0.0.1:5500",
+        "http://127.0.0.1:3000",
+        "http://77.222.63.129:3000/",
         "http://papasavage.xyz.testihc.ru",
         "https://backend-lil3.onrender.com",
     ],
