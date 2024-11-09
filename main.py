@@ -18,21 +18,14 @@ origins = [
     "http://localhost:8888",
     "http://127.0.0.1:5500",
     "http://127.0.0.1:3000",
-    "http://papasavage.xyz.testihc.ru/",
+    "http://papasavage.xyz.testihc.ru",
+    "http://77.222.63.129:3000",  # Added here
+    "https://backend-lil3.onrender.com",
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost",
-        "http://localhost:3000",
-        "http://localhost:8888",
-        "http://127.0.0.1:5500",
-        "http://127.0.0.1:3000",
-        "http://77.222.63.129:3000/",
-        "http://papasavage.xyz.testihc.ru",
-        "https://backend-lil3.onrender.com",
-    ],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
